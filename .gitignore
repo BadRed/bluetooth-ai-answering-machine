@@ -1,0 +1,23 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Runtime data: recordings, transcripts, call logs
+data/
+*.wav
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Test clips are small and needed for the spike
+!assets/**/*.wav

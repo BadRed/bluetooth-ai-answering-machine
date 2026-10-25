@@ -1,0 +1,20 @@
+[project]
+name = "bluetooth-ai-answering-machine"
+version = "0.1.0"
+description = "Pairs with your phone over Bluetooth hands-free and lets an AI voice agent screen your calls"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic",
+    "dbus-fast",
+    "httpx",
+    "websockets",
+]
+
+[project.optional-dependencies]
+mic = ["sounddevice"]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
